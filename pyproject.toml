@@ -1,0 +1,22 @@
+[project]
+name = "miron"
+version = "1.0.0"
+description = "Discord bot that works with weksoftware tools"
+readme = "README.md"
+license = "GPL-3.0"
+authors = [{ name = "Denis", email = "denis@weks.dev" }]
+requires-python = ">=3.13"
+dependencies = [
+    "disnake>=2.10.1",
+    "loguru>=0.7.3",
+    "memory-profiler>=0.61.0",
+    "orjson>=3.10.15",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+start = "miron:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
