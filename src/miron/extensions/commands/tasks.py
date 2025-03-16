@@ -182,7 +182,7 @@ class TasksCommand(commands.Cog):
             await inter.edit_original_response(f"<:utka_zloj:1110624872687747102> У тебя нет задач на доске `{board}`")
             return
         elif len(tasks) == 0:
-            await inter.edit_original_response(f"<:utka_zloj:1110624872687747102> У тебя нет задач")
+            await inter.edit_original_response("<:utka_zloj:1110624872687747102> У тебя нет задач")
         
         embed_title = f"🦆 Задачи {inter.author.name}"
         
@@ -290,7 +290,7 @@ class TasksCommand(commands.Cog):
             await inter.edit_original_response(f"<:utka_zloj:1110624872687747102> Задачи с ID `{task_id}` не существует")
             return
         except ForbiddenError:
-            await inter.edit_original_response(f"<:utka_zloj:1110624872687747102> Вы не можете обновлять чужие задачи!")
+            await inter.edit_original_response("<:utka_zloj:1110624872687747102> Вы не можете обновлять чужие задачи!")
             return
         except IAmATeapotError:
             await inter.edit_original_response(f"<:utka_zloj:1110624872687747102> У данной задачи уже указан статус `{STATUS_MEANINGS[status]}`")
@@ -333,7 +333,7 @@ class TasksCommand(commands.Cog):
             await inter.edit_original_response(f"<:utka_zloj:1110624872687747102> Задачи с ID `{task_id}` не существует")
             return
         except ForbiddenError:
-            await inter.edit_original_response(f"<:utka_zloj:1110624872687747102> Вы не можете удалять чужие задачи!")
+            await inter.edit_original_response("<:utka_zloj:1110624872687747102> Вы не можете удалять чужие задачи!")
             return
         except Exception as e:
             await inter.edit_original_response(f"<:utka_zloj:1110624872687747102> Ошибка при удалении задачи: {e}")

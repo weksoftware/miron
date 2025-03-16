@@ -11,7 +11,7 @@ class OnReadyEvent(commands.Cog):
 
     @commands.Cog.listener(name="on_ready")
     async def on_ready(self):
-        logger.info(f"Bot is ready")
+        logger.info("Bot is ready")
         
         await self.bot.change_presence(activity=disnake.Activity(type=disnake.ActivityType.watching, name="👀🦆"))
 
