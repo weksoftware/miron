@@ -5,10 +5,17 @@
 - Tasks management
 
 ## Usage
+### With uv
 1. Install [uv](https://github.com/astral-sh/uv/)
 2. Clone this repo
 3. Copy `.env.example` to `.env` and fill it with your data
 4. Launch bot with `uv run start`
+
+### With docker compose
+1. Install [docker](https://docs.docker.com/get-started/get-docker/)
+2. Clone this repo
+3. Copy `.env.example` to `.env` and fill it with your data
+4. Launch bot with `docker compose up`
 
 ## Commands
 ### tasks

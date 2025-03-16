@@ -1,0 +1,5 @@
+services:
+  miron:
+    build: .
+    volumes:
+      - ./logs:/app/logs
