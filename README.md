@@ -13,26 +13,26 @@
 ## Commands
 ### tasks
 #### view
-**Usage:** `tasks view [user:user] [--private=yes] [--board=board]`
+**Usage:** `tasks view [user:user] [--private=yes] [--board=board]`\
 **Description:** Shows tasks for user. Available only to bot owners (OWNER_IDS in .env)
 
 #### my
-**Usage:** `tasks my [--private=yes] [--board=board]`
+**Usage:** `tasks my [--private=yes] [--board=board]`\
 **Description:** Shows your tasks.
 
 #### create
-**Usage:** `tasks create [text:string] [board:string] [status:string]`
+**Usage:** `tasks create [text:string] [board:string] [status:string]`\
 **Description:** Creates task.
 
 #### update
-**Usage:** `tasks update [task_id:integer] [status:string]`
+**Usage:** `tasks update [task_id:integer] [status:string]`\
 **Description:** Updates task.
 
 #### delete
-**Usage:** `tasks delete [task_id:integer]`
+**Usage:** `tasks delete [task_id:integer]`\
 **Description:** Deletes task.
 
 ### ping
-**Usage:** `ping`
+**Usage:** `ping`\
 **Description:** Shows bot latency and memory usage.
 
